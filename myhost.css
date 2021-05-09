@@ -1,0 +1,146 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    margin: 0;
+    background-color: #3C3F3E;
+    color: white;
+    font-family: sans-serif;
+}
+pre {
+    margin: 0;
+}
+h1 {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+    font-size: medium;
+    margin-bottom: 1em;
+}
+#outer {
+    padding: 1em;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#rootpair {
+    display: flex;
+}
+#rootpair .left {
+    flex: 1 1 auto;
+}
+#rootpair .right {
+    flex: 0 0 auto;
+    margin-left: 1em;
+}
+.form {
+    flex: 0 0 auto;
+}
+input {
+    font-size: medium;
+}
+.text {
+    margin-bottom: 1.5em;
+}
+.text label {
+    display: block;
+    padding-bottom: .25em;
+}
+.checkbox {
+    display: flex;
+}
+.checkbox label {
+    order: 2;
+}
+
+.icon {
+  
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown>div {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #DDD;
+    color: black;
+    min-width: 250px;
+    z-index: 1;
+    border: 1px solid #444;
+}
+.dropdown>div>div {
+    padding: .1em;
+    white-space: pre;
+}
+.dropdown>div>div:nth-child(odd) {
+  background-color: #CCC;
+}
+.dropdown>div>div:hover {
+    background-color: #888;
+}
+
+.buttons {
+    padding-top: s1em;
+}
+.buttons button {
+    font-size: large;
+}
+button {
+   border: none;
+   padding: .5em 1em;
+   text-decoration: none;
+   background-color: #31C622;
+}
+button:hover:enabled {
+   box-shadow:inset 1px 1px 0px 0px #fff6af;
+   background-color:#dc4;
+}
+button:disabled {
+    background-color: #888;
+    color: #666;
+    text-shadow: none;
+}
+#title {
+    margin-bottom: 1em;
+}
+#title tr, #title td {
+    vertical-align: middle;
+}
+.settings, #logview, #title {
+    background-color: #551A1B;
+    padding: 1em;
+}
+#logview {
+    margin-top: 1em;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 0; /* lets the log view fit the available space */
+}
+#loghead {
+    flex: 0 0 auto;
+    margin-bottom: .5em;
+}
+#log {
+    flex: 1 1 auto;
+    overflow: auto;
+    background-color: #40587A;
+    padding: .25em .5em;
+}
+.error {
+    color: red;
+    font-weight: bold;
+}
+.bad {
+    background-color: red;
+}
+
+
